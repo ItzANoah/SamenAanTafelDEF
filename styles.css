@@ -1,0 +1,329 @@
+
+* {
+    line-height: 1.2em;
+    scroll-behavior: smooth;
+}
+
+/* Algemene stijlen */
+body {
+    margin: 0; /* Verwijdert standaard marges van de browser */
+    font-family: Arial, sans-serif; /* Stelt een leesbaar lettertype in */
+    color: #75403c; /* Tekstkleur in een zachte bruintint */
+    background-color: #F8EECB; /* Achtergrondkleur in een lichte beige tint */
+    display: flex; /* Zorgt voor flexbox layout */
+    flex-direction: column; /* Positioneert de inhoud in een kolom */
+    align-items: center; /* Centreert de inhoud horizontaal */
+    overflow-x: hidden; /* Voorkomt horizontaal scrollen */
+    font-family: "epilogue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1, h2, h3, a {
+   font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+  font-size: 15px;
+}
+
+/* Header sectie */
+header {
+    width: 100%; /* De header vult de volledige breedte van de pagina */
+    padding: 2% 0; /* Voegt verticale ruimte toe aan de header */
+}
+
+header img {
+    max-width: 85px; /* Beperkt de maximale breedte van het logo */
+    height: auto; /* Houdt de verhoudingen van het logo intact */
+    padding-left: 4%; /* afstand tussen de linkerkant van de pagina en het logo */
+}
+
+/* Introductie sectie */
+
+.trash {
+ width: 280px;
+ display: block;
+ margin-left: 95px; 
+}
+
+/* Grid opzet sectie */
+
+.wrapper, .wrapper2, .wrapper3, .wrapper4 {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(75px, auto);
+    place-items: center;
+    width: 100%;
+  }
+
+.wrapper img, .wrapper2 img, .wrapper3 img, .wrapper4 img {
+    width: 45px;
+}
+
+.wrapper h2, .wrapper2 h2, .wrapper3 h2, .wrapper4 h2 {
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.wrapper p {
+  text-align: center ; /* text onder de intro */
+}
+
+.wrapper2 p, .wrapper3 p, .wrapper4 p {
+  margin: 0;
+  margin-left: 9.33%;
+  margin-right: 9.33%;
+}
+
+.arrow img {
+  width: 30px; /* de arrow die naar beneden scrollt */
+}
+
+
+/* Grid 1 */
+.wrapper li:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .wrapper li:nth-child(2) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .wrapper li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .wrapper li:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1 / 2;
+  }
+  .wrapper li:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .wrapper li:nth-child(6) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapper li:nth-child(7) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .wrapper li:nth-child(8) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .wrapper li:nth-child(9) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Grid 2*/
+
+    .wrapper2 li:nth-child(1) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .wrapper2 li:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .wrapper2 li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapper2 li:nth-child(4){
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .wrapper2 li:nth-child(5){
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
+  .wrapper2 li:nth-child(6) {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+  /* Grid 3 */
+
+  .wrapper3 li:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .wrapper3 li:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .wrapper3 li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .wrapper3 li:nth-child(4) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapper3 li:nth-child(5){
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .wrapper3 li:nth-child(6){
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+  .wrapper3 li:nth-child(7){
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* Grid 4 */
+
+  .wrapper4 li:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .wrapper4 li:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .wrapper4 li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .wrapper4 li:nth-child(4) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .wrapper4 li:nth-child(5){
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .wrapper4 li:nth-child(6) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .wrapper4 li:nth-child(7){
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+
+.bottompic {
+    width: 200px; /* Breedte van de panafbeelding */
+    height: auto; /* Houdt de verhoudingen van de afbeelding intact */
+    display: block; /* Zorgt ervoor dat de pan gecentreerd is */
+    margin-bottom: 15.5%;
+}
+
+.bottompic2 {
+  width: 300px; 
+  height: auto; 
+  display: block;
+  margin-bottom: 17.5%;
+}
+
+.text {
+    margin: 0;
+    margin-left: 9.33%;
+    margin-right: 9.33%;
+    text-align: left;
+}
+
+/* Navigatiebalk */
+nav {
+    position: fixed; /* Zorgt ervoor dat de navigatiebalk altijd zichtbaar blijft onderaan de pagina */
+    bottom: 0; /* Positioneert  de balk onderaan de pagina */
+    width: 100%; /* Vul de volledige breedte van de pagina */
+    background-color: #75403c; /* Donkerbruine achtergrondkleur */
+    height: 8%;
+}
+
+nav ul {
+    justify-content: space-evenly; /* Verdeel de items gelijkmatig over de balk */
+    list-style-type: none;
+    align-items: center;
+    display: flex; /* Flexbox layout voor items in de navigatiebalk */
+    padding: 0;
+    align-content: center;
+}
+
+nav li {
+    color: #F8EECB; /* Witte tekstkleur voor de links */
+    font-size: 18px; /* Tekstgrootte van de links */
+    text-align: center;
+}
+
+footer li:active {
+  text-decoration: underline; /* Onderstreept de links bij hover */
+  background-color: #F8EECB;
+}
+
+footer a:active {
+  color: #75403c;
+}
+
+footer {
+    width: 100%;
+}
+
+footer a {
+ color: #F8EECB;
+ text-decoration: none;
+}
+
+.doneren {
+    display: flex; /* Activeer flexbox */
+    align-items: center; /* Lijn de items verticaal uit */
+    gap: 5.33%; /* Ruimte tussen de afbeelding en de knop */
+}
+
+.doneren a {
+  background-color: #75403c;
+  border: none;
+  color: #F8EECB;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 17.5%;
+  order: 1;
+}
+
+.doneren img {
+  width: 150px; /* Breedte van de afbeelding */
+  height: auto; /* Houdt de verhoudingen intact */
+  order: 2;
+  margin-bottom: 20%;
+}
